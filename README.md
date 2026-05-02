@@ -74,7 +74,8 @@ python scripts/eval_external_benchmarks.py \
 ## 다음 할 일
 
 1. H100 80M 5M+direct run 완료
-2. checkpoint/data/config 재현 패키징
-3. FLORES/KLUE STS/다국어 retrieval 평가
-4. 155M 또는 더 큰 데이터로 확장
-5. Hugging Face 모델 카드 작성
+2. `queue_eval_multibench_after_80m_5m_direct_run1.sh`로 완료 후 자동 평가
+3. checkpoint/data/config 재현 패키징
+4. FLORES/KLUE STS/다국어 retrieval 평가
+5. 155M 또는 더 큰 데이터로 확장
+6. Hugging Face 모델 카드 작성
