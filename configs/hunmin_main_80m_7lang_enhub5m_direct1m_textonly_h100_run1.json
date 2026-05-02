@@ -1,0 +1,38 @@
+{
+  "model": {
+    "model_name": "hunmin-main-80m-7lang-enhub5m-direct1m-textonly-h100-run1",
+    "languages": ["en", "ko", "ja", "zh", "fr", "de", "es"],
+    "special_tokens": [
+      "<PAD>",
+      "<UNK>",
+      "[EN]",
+      "[KO]",
+      "[JA]",
+      "[ZH]",
+      "[FR]",
+      "[DE]",
+      "[ES]",
+      "[HUNMIN]",
+      "[UHPS]"
+    ],
+    "max_len": 160,
+    "d_model": 768,
+    "n_heads": 12,
+    "n_layers": 10,
+    "ff_dim": 3072,
+    "dropout": 0.1,
+    "temperature": 0.05,
+    "max_vocab": 12000,
+    "vocab_max_lines": 1500000,
+    "steps": 100000,
+    "batch_size": 512,
+    "lr": 0.0001,
+    "weight_decay": 0.01,
+    "eval_interval": 2000,
+    "save_interval": 10000,
+    "log_interval": 50,
+    "shuffle_buffer": 50000,
+    "eval_rows": 12000,
+    "seed": 20260501
+  }
+}
