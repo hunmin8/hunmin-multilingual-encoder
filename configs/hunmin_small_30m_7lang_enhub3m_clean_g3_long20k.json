@@ -1,0 +1,26 @@
+{
+  "model": {
+    "model_name": "hunmin-small-30m-7lang-enhub3m-clean-g3-long20k",
+    "languages": ["en", "ko", "ja", "zh", "fr", "de", "es"],
+    "special_tokens": ["<PAD>", "<UNK>", "[EN]", "[KO]", "[JA]", "[ZH]", "[FR]", "[DE]", "[ES]", "[HUNMIN]", "[UHPS]"],
+    "max_len": 160,
+    "d_model": 512,
+    "n_heads": 8,
+    "n_layers": 8,
+    "ff_dim": 2048,
+    "dropout": 0.1,
+    "temperature": 0.05,
+    "max_vocab": 8000,
+    "vocab_max_lines": 1200000,
+    "steps": 20000,
+    "batch_size": 128,
+    "lr": 0.0002,
+    "weight_decay": 0.01,
+    "eval_interval": 2000,
+    "save_interval": 10000,
+    "log_interval": 50,
+    "shuffle_buffer": 20000,
+    "eval_rows": 12000,
+    "seed": 20260514
+  }
+}

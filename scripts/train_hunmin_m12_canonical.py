@@ -34,13 +34,6 @@ LANGUAGES = ["ko", "ja", "zh", "en"]
 LANGUAGE_COUNT = len(LANGUAGES)
 
 
-def declared_size_from_name(model_name: str) -> str:
-    for part in model_name.replace("_", "-").split("-"):
-        if len(part) > 1 and part[-1].lower() in {"m", "b"} and part[:-1].isdigit():
-            return part.lower()
-    return "unknown"
-
-
 @dataclass
 class M12Config:
     model_name: str = MODEL_NAME
@@ -397,8 +390,8 @@ def main() -> None:
     log_path = args.output_dir / "log.jsonl"
     metadata = {
         "model_name": cfg.model_name,
-        "model_family": "hunmin-encoder",
-        "declared_size": declared_size_from_name(cfg.model_name),
+        "model_family": "hunmin-lite",
+        "declared_size": "13m",
         "language_count": len(cfg.languages),
         "languages": cfg.languages,
         "config": asdict(cfg),
